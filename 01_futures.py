@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver 
 
 
-os.chdir('D:/Projects/MLB2')
+os.chdir('')
 
 
 
@@ -251,7 +251,7 @@ url = f"https://www.fangraphs.com/leaders/major-league?pos=all&stats=bat&lg=all&
 PY_WAR_bat = []
 
 # Selenium freeze
-driver = webdriver.Chrome("D:/Projects/MLB2/chromedriver.exe")
+driver = webdriver.Chrome(os.getcwd() + '\\chromedriver.exe')
 driver.get(url)
 html = driver.page_source
 soup = BeautifulSoup(html)
@@ -280,7 +280,7 @@ url = f"https://www.fangraphs.com/leaders/major-league?pos=all&lg=all&qual=0&typ
 PY_WAR_SP = []
 
 # Selenium freeze
-driver = webdriver.Chrome("D:/Projects/MLB2/chromedriver.exe")
+driver = webdriver.Chrome(os.getcwd() + '\\chromedriver.exe')
 driver.get(url)
 html = driver.page_source
 soup = BeautifulSoup(html)
@@ -308,7 +308,7 @@ url = f"https://www.fangraphs.com/leaders/major-league?pos=all&lg=all&qual=0&typ
 PY_WAR_RP = []
 
 # Selenium freeze
-driver = webdriver.Chrome("D:/Projects/MLB2/chromedriver.exe")
+driver = webdriver.Chrome(os.getcwd() + '\\chromedriver.exe')
 driver.get(url)
 html = driver.page_source
 soup = BeautifulSoup(html)
@@ -347,7 +347,7 @@ url = 'https://www.fangraphs.com/depthcharts.aspx?position=Team'
 CY_WAR_bat = []
 
 # Selenium freeze
-driver = webdriver.Chrome("D:/Projects/MLB2/chromedriver.exe")
+driver = webdriver.Chrome(os.getcwd() + '\\chromedriver.exe')
 driver.get(url)
 html = driver.page_source
 soup = BeautifulSoup(html)
@@ -421,7 +421,6 @@ PY_WL = PY_WL.merge(team_master[['teamID','teamCode']], how = 'left', on = 'team
 
 
 
-
 # =============================================================================
 # CY PYTH
 # =============================================================================
@@ -485,7 +484,6 @@ dat[chg_var] = round(dat['norm_PCT'] * dat[norm_var].sum())
 
 dat['CY_RS_NEW'].sum()
 dat['CY_RA_NEW'].sum()
-
 
 
 # CY PYTH Projections
