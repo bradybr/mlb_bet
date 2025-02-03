@@ -4,16 +4,28 @@
 
 
 ## Getting Started
+
+
+
 First, you will need to download Chrome Driver and place the .exe file in your working directory to use the Selenium scripts.
+
 https://developer.chrome.com/docs/chromedriver/downloads
 
 
-## Futures.py
+## Futures
 
 ```
 os.chdir('')
 ```
 
 ```
-yrs = 
+# =============================================================================
+# TIME DIMENSIONS
+# =============================================================================
+
+# Last 3 years
+yrs = range(2022, 2025)
 ```
+
+## Gamedays
+
