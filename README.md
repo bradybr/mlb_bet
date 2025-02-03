@@ -12,7 +12,7 @@ Several of the sites needed to pull current stats render their HTML dynamically 
 https://developer.chrome.com/docs/chromedriver/downloads
 
 
-## 01_futures.py
+## Futures
 Only a couple of updates are required to run the 01_futures.py file.  
 
 First, set your working directory path, which is called later for the Selenium HTML scrapes.  
