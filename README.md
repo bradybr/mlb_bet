@@ -2,6 +2,9 @@
 
 ![image](https://github.com/bradybr/mlb_bet/blob/main/images/busch.jpg?)
 
+Codified MLB betting strategy from Joe Peta's Trading Bases.
+
+![image](https://github.com/bradybr/mlb_bet/blob/main/images/trading_bases.jpg?)
 
 ## Getting Started
 
@@ -27,5 +30,5 @@ os.chdir('')
 yrs = range(2022, 2025)
 ```
 
-## Gamedays
+## Gameday
 
